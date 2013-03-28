@@ -18,6 +18,8 @@
 		55081A841704474C00DC7E65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55081A831704474B00DC7E65 /* Default-568h@2x.png */; };
 		55081A871704474C00DC7E65 /* DTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55081A861704474C00DC7E65 /* DTViewController.m */; };
 		55081A8A1704474C00DC7E65 /* DTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55081A881704474C00DC7E65 /* DTViewController.xib */; };
+		55081A971704514700DC7E65 /* DTCubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55081A961704514700DC7E65 /* DTCubeView.m */; };
+		55081A991704538400DC7E65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55081A981704538400DC7E65 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		55081A851704474C00DC7E65 /* DTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTViewController.h; sourceTree = "<group>"; };
 		55081A861704474C00DC7E65 /* DTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTViewController.m; sourceTree = "<group>"; };
 		55081A891704474C00DC7E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DTViewController.xib; sourceTree = "<group>"; };
+		55081A951704514700DC7E65 /* DTCubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCubeView.h; sourceTree = "<group>"; };
+		55081A961704514700DC7E65 /* DTCubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCubeView.m; sourceTree = "<group>"; };
+		55081A981704538400DC7E65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55081A991704538400DC7E65 /* QuartzCore.framework in Frameworks */,
 				55081A6E1704474B00DC7E65 /* UIKit.framework in Frameworks */,
 				55081A701704474B00DC7E65 /* Foundation.framework in Frameworks */,
 				55081A721704474B00DC7E65 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +62,7 @@
 		55081A611704474B00DC7E65 = {
 			isa = PBXGroup;
 			children = (
+				55081A981704538400DC7E65 /* QuartzCore.framework */,
 				55081A731704474B00DC7E65 /* DTCubeView */,
 				55081A6C1704474B00DC7E65 /* Frameworks */,
 				55081A6B1704474B00DC7E65 /* Products */,
@@ -88,6 +95,8 @@
 				55081A851704474C00DC7E65 /* DTViewController.h */,
 				55081A861704474C00DC7E65 /* DTViewController.m */,
 				55081A881704474C00DC7E65 /* DTViewController.xib */,
+				55081A951704514700DC7E65 /* DTCubeView.h */,
+				55081A961704514700DC7E65 /* DTCubeView.m */,
 				55081A741704474B00DC7E65 /* Supporting Files */,
 			);
 			path = DTCubeView;
@@ -177,6 +186,7 @@
 				55081A7A1704474B00DC7E65 /* main.m in Sources */,
 				55081A7E1704474B00DC7E65 /* DTAppDelegate.m in Sources */,
 				55081A871704474C00DC7E65 /* DTViewController.m in Sources */,
+				55081A971704514700DC7E65 /* DTCubeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +307,7 @@
 				55081A8F1704474C00DC7E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
