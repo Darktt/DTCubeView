@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55081A6E1704474B00DC7E65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55081A6D1704474B00DC7E65 /* UIKit.framework */; };
+		55081A701704474B00DC7E65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55081A6F1704474B00DC7E65 /* Foundation.framework */; };
+		55081A721704474B00DC7E65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55081A711704474B00DC7E65 /* CoreGraphics.framework */; };
+		55081A781704474B00DC7E65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55081A761704474B00DC7E65 /* InfoPlist.strings */; };
+		55081A7A1704474B00DC7E65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55081A791704474B00DC7E65 /* main.m */; };
+		55081A7E1704474B00DC7E65 /* DTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55081A7D1704474B00DC7E65 /* DTAppDelegate.m */; };
+		55081A801704474B00DC7E65 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 55081A7F1704474B00DC7E65 /* Default.png */; };
+		55081A821704474B00DC7E65 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55081A811704474B00DC7E65 /* Default@2x.png */; };
+		55081A841704474C00DC7E65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55081A831704474B00DC7E65 /* Default-568h@2x.png */; };
+		55081A871704474C00DC7E65 /* DTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55081A861704474C00DC7E65 /* DTViewController.m */; };
+		55081A8A1704474C00DC7E65 /* DTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55081A881704474C00DC7E65 /* DTViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55081A6A1704474B00DC7E65 /* DTCubeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTCubeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55081A6D1704474B00DC7E65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55081A6F1704474B00DC7E65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55081A711704474B00DC7E65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55081A751704474B00DC7E65 /* DTCubeView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTCubeView-Info.plist"; sourceTree = "<group>"; };
+		55081A771704474B00DC7E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55081A791704474B00DC7E65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55081A7B1704474B00DC7E65 /* DTCubeView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTCubeView-Prefix.pch"; sourceTree = "<group>"; };
+		55081A7C1704474B00DC7E65 /* DTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAppDelegate.h; sourceTree = "<group>"; };
+		55081A7D1704474B00DC7E65 /* DTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAppDelegate.m; sourceTree = "<group>"; };
+		55081A7F1704474B00DC7E65 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		55081A811704474B00DC7E65 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		55081A831704474B00DC7E65 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		55081A851704474C00DC7E65 /* DTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTViewController.h; sourceTree = "<group>"; };
+		55081A861704474C00DC7E65 /* DTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTViewController.m; sourceTree = "<group>"; };
+		55081A891704474C00DC7E65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DTViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55081A671704474B00DC7E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55081A6E1704474B00DC7E65 /* UIKit.framework in Frameworks */,
+				55081A701704474B00DC7E65 /* Foundation.framework in Frameworks */,
+				55081A721704474B00DC7E65 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55081A611704474B00DC7E65 = {
+			isa = PBXGroup;
+			children = (
+				55081A731704474B00DC7E65 /* DTCubeView */,
+				55081A6C1704474B00DC7E65 /* Frameworks */,
+				55081A6B1704474B00DC7E65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55081A6B1704474B00DC7E65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55081A6A1704474B00DC7E65 /* DTCubeView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55081A6C1704474B00DC7E65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55081A6D1704474B00DC7E65 /* UIKit.framework */,
+				55081A6F1704474B00DC7E65 /* Foundation.framework */,
+				55081A711704474B00DC7E65 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55081A731704474B00DC7E65 /* DTCubeView */ = {
+			isa = PBXGroup;
+			children = (
+				55081A7C1704474B00DC7E65 /* DTAppDelegate.h */,
+				55081A7D1704474B00DC7E65 /* DTAppDelegate.m */,
+				55081A851704474C00DC7E65 /* DTViewController.h */,
+				55081A861704474C00DC7E65 /* DTViewController.m */,
+				55081A881704474C00DC7E65 /* DTViewController.xib */,
+				55081A741704474B00DC7E65 /* Supporting Files */,
+			);
+			path = DTCubeView;
+			sourceTree = "<group>";
+		};
+		55081A741704474B00DC7E65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55081A751704474B00DC7E65 /* DTCubeView-Info.plist */,
+				55081A761704474B00DC7E65 /* InfoPlist.strings */,
+				55081A791704474B00DC7E65 /* main.m */,
+				55081A7B1704474B00DC7E65 /* DTCubeView-Prefix.pch */,
+				55081A7F1704474B00DC7E65 /* Default.png */,
+				55081A811704474B00DC7E65 /* Default@2x.png */,
+				55081A831704474B00DC7E65 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55081A691704474B00DC7E65 /* DTCubeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55081A8D1704474C00DC7E65 /* Build configuration list for PBXNativeTarget "DTCubeView" */;
+			buildPhases = (
+				55081A661704474B00DC7E65 /* Sources */,
+				55081A671704474B00DC7E65 /* Frameworks */,
+				55081A681704474B00DC7E65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTCubeView;
+			productName = DTCubeView;
+			productReference = 55081A6A1704474B00DC7E65 /* DTCubeView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55081A621704474B00DC7E65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Darktt;
+			};
+			buildConfigurationList = 55081A651704474B00DC7E65 /* Build configuration list for PBXProject "DTCubeView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55081A611704474B00DC7E65;
+			productRefGroup = 55081A6B1704474B00DC7E65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55081A691704474B00DC7E65 /* DTCubeView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55081A681704474B00DC7E65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55081A781704474B00DC7E65 /* InfoPlist.strings in Resources */,
+				55081A801704474B00DC7E65 /* Default.png in Resources */,
+				55081A821704474B00DC7E65 /* Default@2x.png in Resources */,
+				55081A841704474C00DC7E65 /* Default-568h@2x.png in Resources */,
+				55081A8A1704474C00DC7E65 /* DTViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55081A661704474B00DC7E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55081A7A1704474B00DC7E65 /* main.m in Sources */,
+				55081A7E1704474B00DC7E65 /* DTAppDelegate.m in Sources */,
+				55081A871704474C00DC7E65 /* DTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55081A761704474B00DC7E65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55081A771704474B00DC7E65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		55081A881704474C00DC7E65 /* DTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55081A891704474C00DC7E65 /* en */,
+			);
+			name = DTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55081A8B1704474C00DC7E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55081A8C1704474C00DC7E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55081A8E1704474C00DC7E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTCubeView/DTCubeView-Prefix.pch";
+				INFOPLIST_FILE = "DTCubeView/DTCubeView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55081A8F1704474C00DC7E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DTCubeView/DTCubeView-Prefix.pch";
+				INFOPLIST_FILE = "DTCubeView/DTCubeView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55081A651704474B00DC7E65 /* Build configuration list for PBXProject "DTCubeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55081A8B1704474C00DC7E65 /* Debug */,
+				55081A8C1704474C00DC7E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55081A8D1704474C00DC7E65 /* Build configuration list for PBXNativeTarget "DTCubeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55081A8E1704474C00DC7E65 /* Debug */,
+				55081A8F1704474C00DC7E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55081A621704474B00DC7E65 /* Project object */;
+}
