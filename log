@@ -1,0 +1,2 @@
+- Fixed use ARC issue.
+- Fixed setter view have memory leak issue.
