@@ -36,6 +36,7 @@
     // ARC is Off
     DTCubeView *cubeView = [[[DTCubeView alloc] initWithFrame:frame forView1:view1 andView2:view2 duration:duration] autorelease];
 #endif
+    
     return cubeView;
 }
 
@@ -78,9 +79,10 @@
     
     if (_view1 != nil) {
         [_view1 removeFromSuperview];
+        [_view1 release];
     }
     
-    _view1 = view1;
+    _view1 = [view1 retain];
     [self addSubview:_view1];
 }
 
@@ -92,9 +94,10 @@
     
     if (_view2 != nil) {
         [_view2 removeFromSuperview];
+        [_view2 release];
     }
     
-    _view2 = view2;
+    _view2 = [view2 retain];
     [self addSubview:_view2];
 }
 
