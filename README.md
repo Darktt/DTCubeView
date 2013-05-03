@@ -17,7 +17,7 @@ UIView *aView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
 UIView *aView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
 [view2 setBackgroundColor:[UIColor greenColor]];
 
-DTCubeView *cubeView = [DTCubeView cubeViewWithFrame:aFrame forView1:aView1 andView2:aView2];
+DTCubeView *cubeView = [DTCubeView cubeViewWithFrame:CGRectMake(0, 0, 320, 44) forView1:aView1 andView2:aView2];
 
 [self.view addSubview:cubeView];
 
