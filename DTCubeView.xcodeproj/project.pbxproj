@@ -95,8 +95,7 @@
 				55081A851704474C00DC7E65 /* DTViewController.h */,
 				55081A861704474C00DC7E65 /* DTViewController.m */,
 				55081A881704474C00DC7E65 /* DTViewController.xib */,
-				55081A951704514700DC7E65 /* DTCubeView.h */,
-				55081A961704514700DC7E65 /* DTCubeView.m */,
+				55FA0DBC1733A2B100D6364C /* DTCubeView */,
 				55081A741704474B00DC7E65 /* Supporting Files */,
 			);
 			path = DTCubeView;
@@ -114,6 +113,15 @@
 				55081A831704474B00DC7E65 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55FA0DBC1733A2B100D6364C /* DTCubeView */ = {
+			isa = PBXGroup;
+			children = (
+				55081A951704514700DC7E65 /* DTCubeView.h */,
+				55081A961704514700DC7E65 /* DTCubeView.m */,
+			);
+			path = DTCubeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

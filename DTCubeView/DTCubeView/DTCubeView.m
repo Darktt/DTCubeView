@@ -6,10 +6,11 @@
 //  Copyright (c) 2013 Darktt. All rights reserved.
 //
 
-#import "DTCubeView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "DTCubeView.h"
 
 #define RADIANS(deg) ((deg) * M_PI / 180.0f)
+#define kAnimateDuration 0.5f
 
 @interface DTCubeView (){
     UIView *_view1;
@@ -24,7 +25,7 @@
 
 + (id)cubeViewWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2
 {
-    return [self cubeViewWithFrame:frame forView1:view1 andView2:view2 duration:0.5f];
+    return [self cubeViewWithFrame:frame forView1:view1 andView2:view2 duration:kAnimateDuration];
 }
 
 + (id)cubeViewWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2 duration:(NSTimeInterval)duration
