@@ -8,7 +8,7 @@ DTCubeView
 Get to Start
 ==========
 
-###Set two into cubeView class:
+###Set two view into cubeView class:
 
 ``` objective-c
 UIView *aView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
