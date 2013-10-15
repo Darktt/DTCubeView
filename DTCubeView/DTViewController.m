@@ -26,6 +26,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
+    }
+    
     view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     [view1 setBackgroundColor:rgb(214, 36, 8)];
     
@@ -35,7 +39,7 @@
     view3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     [view3 setBackgroundColor:rgb(22, 69, 174)];
     
-    DTCubeView *cubeView = [DTCubeView cubeViewWithFrame:CGRectMake(0, 10, self.view.frame.size.width, 44) forView1:view1 andView2:view2];
+    DTCubeView *cubeView = [DTCubeView cubeViewWithFrame:CGRectMake(0, 30, self.view.frame.size.width, 44) forView1:view1 andView2:view2];
     [cubeView setTag:1];
     
     [self.view addSubview:cubeView];
@@ -47,6 +51,11 @@
     [btn addTarget:self action:@selector(slideCubeUP:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btn];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
 }
 
 - (void)dealloc

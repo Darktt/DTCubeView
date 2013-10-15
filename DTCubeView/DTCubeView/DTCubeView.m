@@ -9,10 +9,31 @@
 #import <QuartzCore/QuartzCore.h>
 #import "DTCubeView.h"
 
+#if __has_feature(objc_arc)
+
+#define ARC_MODE_USED
+#define DTAutorelease( expression )     expression
+#define DTRelease( expression )
+#define DTRetain( expression )          expression
+#define DTBlockCopy( expression )       expression
+#define DTBlockRelease( expression )    expression
+
+#else
+
+#define ARC_MODE_NOT_USED
+#define DTAutorelease( expression )     [expression autorelease]
+#define DTRelease( expression )         [expression release]
+#define DTRetain( expression )          [expression retain]
+#define DTBlockCopy( expression )       Block_copy( expression )
+#define DTBlockRelease( expression )    Block_release( expression )
+
+#endif
+
 #define RADIANS(deg) ((deg) * M_PI / 180.0f)
 #define kAnimateDuration 0.5f
 
-@interface DTCubeView (){
+@interface DTCubeView ()
+{
     UIView *_view1;
     UIView *_view2;
     
@@ -23,22 +44,16 @@
 
 @implementation DTCubeView
 
-+ (id)cubeViewWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2
++ (DTInstancetype)cubeViewWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2
 {
     return [self cubeViewWithFrame:frame forView1:view1 andView2:view2 duration:kAnimateDuration];
 }
 
-+ (id)cubeViewWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2 duration:(NSTimeInterval)duration
++ (DTInstancetype)cubeViewWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2 duration:(NSTimeInterval)duration
 {
-#if __has_feature(objc_arc)
-    // ARC is On
     DTCubeView *cubeView = [[DTCubeView alloc] initWithFrame:frame forView1:view1 andView2:view2 duration:duration];
-#else
-    // ARC is Off
-    DTCubeView *cubeView = [[[DTCubeView alloc] initWithFrame:frame forView1:view1 andView2:view2 duration:duration] autorelease];
-#endif
     
-    return cubeView;
+    return DTAutorelease(cubeView);
 }
 
 - (id)initWithFrame:(CGRect)frame forView1:(UIView *)view1 andView2:(UIView *)view2 duration:(NSTimeInterval)duration
@@ -49,9 +64,9 @@
     [self setBackgroundColor:[UIColor blackColor]];
     [self setClipsToBounds:YES];
     
-    _view1 = view1;
+    _view1 = DTRetain(view1);
     
-    _view2 = view2;
+    _view2 = DTRetain(view2);
     
     _duration = duration;
     
@@ -80,11 +95,16 @@
     
     if (_view1 != nil) {
         [_view1 removeFromSuperview];
-        [_view1 release];
+        DTRelease(_view1);
     }
     
-    _view1 = [view1 retain];
+    _view1 = DTRetain(view1);
     [self addSubview:_view1];
+}
+
+- (UIView *)view1
+{
+    return _view1;
 }
 
 - (void)setView2:(UIView *)view2
@@ -95,16 +115,11 @@
     
     if (_view2 != nil) {
         [_view2 removeFromSuperview];
-        [_view2 release];
+        DTRelease(_view2);
     }
     
-    _view2 = [view2 retain];
+    _view2 = DTRetain(view2);
     [self addSubview:_view2];
-}
-
-- (UIView *)view1
-{
-    return _view1;
 }
 
 - (UIView *)view2
@@ -135,8 +150,8 @@
     CATransform3D viewOutEndTransform = CATransform3DMakeRotation(RADIANS(120), 1.0, 0.0, 0.0);
     viewOutEndTransform.m34 = -1.0 / 200.0;
     
-    _view1.layer.transform = CATransform3DIdentity;
-    _view2.layer.transform = viewOutEndTransform;
+    [_view1.layer setTransform:CATransform3DIdentity];
+    [_view2.layer setTransform:viewOutEndTransform];
     
     [UIView animateWithDuration:_duration
                           delay:0.0f
